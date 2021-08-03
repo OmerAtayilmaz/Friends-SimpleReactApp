@@ -1,0 +1,46 @@
+
+{
+     "users":[
+            {
+            "id":"1",
+            "username":"omer.atay",
+            "name":"omer",
+            "followers":92,
+            "following":46,
+            "messages":25
+            },
+            {
+            "id":"2",
+            "username":"furkan.sunger",
+            "name":"furkan",
+            "followers":82,
+            "following":51,
+            "messages":62
+            },
+            
+            {
+            "id":"3",
+            "username":"senol.gym",
+            "name":"Senol",
+            "followers":82,
+            "following":51,
+            "messages":62
+            },
+            {
+            "id":"4",
+            "username":"arif.cakir",
+            "name":"Arif",
+            "followers":73,
+            "following":12,
+            "messages":33
+            },
+            {
+            "id":"5",
+            "username":"jonas.schmeddtman",
+            "name":"jonas",
+            "followers":41,
+            "following":65,
+            "messages":77
+            }
+     ]
+}

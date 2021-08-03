@@ -1,38 +1,89 @@
-.App {
+/* import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+
+:root{
+  --dark-green:#149911;
+  --dark:#424342;
+  --green:#1EFC1E;
+  --muted:#ddd;
+  --font-lato:'Lato', sans-serif;
+  --font-lobster:'Lobster', cursive;
+  --font-roboto:'Roboto', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  
+}
+
+.bg-darkgreen{background-color: var(--dark-green) !important;}
+.bg-dark{background-color: var(--dark) !important;}
+.bg-green{background-color: var(--green)!important;}
+
+/*Navbar*/
+
+.navbar-brand{
+  letter-spacing: 5px;
+  font-size:2.3rem;
+  color:#fff !important;
+  font-family: var(--font-lobster);
+}
+.navbar-nav{
+  margin-left: 25%;
+}
+.navbar-nav a{
+  margin:5px;
+  width:200px;
   text-align: center;
+  color:var(--dark) !important;
+  font-family: var(--font-poppins) !important;
+  font-size: 1.2rem !important;
+  background-color: #fff;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.navbar-nav a:hover{
+  background-color: var(--muted);
+  margin-top:-.1px;
+  transition: 0.3s;
+  box-shadow: 5px 5px 3px var(--dark);
+}
+/* Add Profile */
+
+.btn-custom{
+  background-color: var(--dark-green);
+  border-radius: 2rem;
+  color:#fff;
+  font-size:1rem; 
+  font-family: var(--font-roboto);
+  margin-bottom: 25px !important;
+}
+.btn-custom:hover{
+  color:var(--muted);
+}
+.add-card{
+  background: var(--dark);
+  color:#ddd;
+  font-family: var(--font-roboto);
+  border:0 !important;
+}
+.add-card .card-header{
+  border:0;
+  border:1px solid #fff;
+  margin:5px;
+  border-radius:0 0 30px 30px;
+  box-shadow: 5px 5px 3px #333;;
+}
+.add-card h4{
+  letter-spacing: 15px;
+}
+.add-card label{
+  letter-spacing: 2px;
+  font-family: var(--font-lato);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*Card*/
+.card-profile{
+  background: var(--dark);
 }
